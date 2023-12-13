@@ -1,5 +1,8 @@
 import Image from 'next/image'
-
+// import logo from './logo.svg';
+import './App.css';
+// import NavigationComponent from './components/header/nav.component';
+import BannerComponent from '';
 // export function Home() {
 //   return (
 //     <main className="flex min-h-screen flex-col items-center justify-between p-24">
@@ -116,3 +119,16 @@ export default function Page()
 {
   return <h1>Hello</h1>
 }
+
+
+
+
+function App() {
+  return (
+    <div className="App">
+      <BannerComponent />
+    </div>
+  );
+}
+
+export default App;
