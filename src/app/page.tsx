@@ -1,7 +1,9 @@
 import Image from 'next/image'
 import React from 'react';
 import '../styles/app.css';
-import img1 from '../img/01.jpg';
+import img4 from '../img/04.png';
+import img5 from '../img/005.png';
+import img6 from '../img/06.png';
 
 export function Page()
 {
@@ -40,7 +42,7 @@ export function Page()
             <div className="container px-5">
                 <div className="row gx-5 align-items-center">
                     <div className="col-lg-6 order-lg-2">
-                        <div className="p-5"><img className="img-fluid rounded-circle" src="assets/img/anim.png" alt="..." /></div>
+                        <div className="p-5"><img className="img-fluid rounded-circle" src={img4.src} alt="..." /></div>
                     </div>
                     <div className="col-lg-6 order-lg-1">
                         <div className="p-5">
@@ -55,7 +57,7 @@ export function Page()
             <div className="container px-5">
                 <div className="row gx-5 align-items-center">
                     <div className="col-lg-6">
-                        <div className="p-5"><img className="img-fluid rounded-circle" src="../img/01.jpg" alt="..." /></div>
+                        <div className="p-5"><img className="img-fluid rounded-circle" src={img5.src} alt="..." /></div>
                     </div>
                     <div className="col-lg-6">
                         <div className="p-5">
@@ -70,7 +72,7 @@ export function Page()
             <div className="container px-5">
                 <div className="row gx-5 align-items-center">
                     <div className="col-lg-6 order-lg-2">
-                        <div className="p-5"><img className="img-fluid rounded-circle" src="assets/img/M3.png" alt="..." /></div>
+                        <div className="p-5"><img className="img-fluid rounded-circle" src={img6.src} alt="..." /></div>
                     </div>
                     <div className="col-lg-6 order-lg-1">
                         <div className="p-5">
@@ -95,15 +97,9 @@ export function Page()
 
      
      
-     
+
   );
 } 
 
-
-function MyComponent() {
-    return (
-      <img className="img-fluid rounded-circle" src={img1} alt="..." />
-    );
-  }
   
   export default Page;
