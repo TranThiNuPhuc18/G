@@ -9,8 +9,8 @@ import NavComponent from '../components/nav/nav.component';
 // Add this line to import Bootstrap CSS from a CDN
 // import 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js';
 import "bootstrap/dist/css/bootstrap.min.css"; // Import bootstrap CSS
-import "../styles/app.css";
-
+// import "../styles/app.css";
+import "../styles/home.css"
 export function Page()
 {
   return (
@@ -26,8 +26,12 @@ export function Page()
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span></button>
                 <div className="collapse navbar-collapse" id="navbarResponsive">
                     <ul className="navbar-nav ms-auto">
-                        <li className="nav-item"><a className="nav-link" href="service.html">DỊCH VỤ</a></li>
-                        <li className="nav-item"><a className="nav-link" href="#!">LIÊN HỆ</a></li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="service.html">DỊCH VỤ</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#!">LIÊN HỆ</a>
+                        </li>
                     </ul>
                 </div>
             </div>
