@@ -1,9 +1,15 @@
-import Image from 'next/image'
+import Image from 'next/image';
+import "bootstrap/dist/css/bootstrap.min.css";
 import React from 'react';
 import '../styles/app.css';
 import img4 from '../img/04.png';
 import img5 from '../img/005.png';
 import img6 from '../img/06.png';
+import NavComponent from '../components/nav/nav.component';
+// Add this line to import Bootstrap CSS from a CDN
+// import 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js';
+import "bootstrap/dist/css/bootstrap.min.css"; // Import bootstrap CSS
+import "../styles/app.css";
 
 export function Page()
 {
@@ -14,7 +20,7 @@ export function Page()
         <title>One Page Wonder - Start Bootstrap Template</title> 
     </head>
     <body id="page-top">
-        <nav className="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+       <nav className="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
             <div className="container px-5">
                 <a className="navbar-brand" href="#page-top">GARA TRUNG HẬU</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span></button>
@@ -25,7 +31,7 @@ export function Page()
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav> 
         <header className="masthead text-center text-white">
             <div className="masthead-content">
                 <div className="container px-5">
@@ -88,10 +94,7 @@ export function Page()
         </footer>
         
         {/* Bootstrap core JS */}
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-      
-        {/* Core theme JS */}
-        <script src="js/scripts.js"></script>
+        {/* <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> */}
         </body>
         </>
 
@@ -101,5 +104,17 @@ export function Page()
   );
 } 
 
-  
-  export default Page;
+
+function App() {
+  return (
+    <div className="App">
+    <NavComponent />
+      {/* <NavigationComponent />
+      <BannerComponent />
+      <ContentComponent />
+      <FooterComponent /> */}
+    </div>
+  );
+}
+
+export default Page;
